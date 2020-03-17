@@ -1,0 +1,293 @@
+/* CSD 122 Final Project Bernice Carbaugh 03/17/2020 */
+
+:root {
+  --color-black: #413f3d;
+  --color-darkgray: #565656;
+  --color-teal: #4aa8b3;
+  --color-steelblue: #697184;
+  --color-white: #f2f1ef;
+  --color-medgray: #b1a6a4;
+  --color-lightgray: #d8cfd0;
+  --color-error: red;
+
+  /* font family
+Montserrat, Merriweather, Oswald
+
+colors 
+Isabelline #F2F1EF;
+QuickSilver #B1A6A4;
+AuroMetalSaurus #697184;
+Teal #4AA8B3;
+Light Gray #D8CFD0;
+Black Olive #413F3D;
+Blackboard #565656;
+*/
+}
+
+/*********** header and main body styling ***********/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Merriweather", serif;
+  color: var(--color-darkgray);
+  background-color: var(--color-white);
+  text-align: center;
+  max-width: 1200px;
+}
+
+#divContainer {
+  padding: 30px 10px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: var(--color-steelblue);
+}
+
+#divTitle {
+  padding: 2px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  color: var(--color-teal);
+}
+
+/*********** navigation styling ***********/
+#divNav {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: baseline;
+}
+
+/* for medium to wider screens, make the nav bar horizontal */
+@media all and (min-width: 500px) {
+  #divNav {
+    flex-direction: row;
+  }
+
+  #divNav a {
+    flex: 0 1 auto;
+    margin-right: 20px;
+  }
+
+  #divNav a:last-of-type {
+    margin-right: 0px;
+  }
+}
+
+#divNav .activepage {
+  color: var(--color-teal);
+  font-size: larger;
+}
+
+#divNav a:not(.activepage):hover {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: var(--color-medgray);
+  color: var(--color-steelblue);
+  font-size: larger;
+}
+
+/*********** main content and common styles ***********/
+#mainContent {
+  text-align: left;
+  padding: 10px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-lightgray);
+}
+
+/* for wide screens, make the main content narrower (80% wide, centered with L/R margins) */
+@media all and (min-width: 800px) {
+  #mainContent {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.lightBackground {
+  background-color: var(--color-lightgray);
+}
+
+.right {
+  text-align: right;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+}
+
+.sectionTitle {
+  background-color: var(--color-darkgray);
+  color: var(--color-white);
+  font-size: large;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 3px;
+  display: block;
+  padding: 10px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.subText {
+  font-family: "Courier New", Courier, monospace;
+  font-style: normal;
+  font-size: smaller;
+  color: var(--color-medgray);
+  margin-block-start: 0px;
+  margin-block-end: 2px;
+}
+
+.tight {
+  margin-block-start: 0px;
+  margin-block-end: 2px;
+}
+
+.icon {
+  color: var(--color-steelblue);
+  font-size: xx-large;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+/* override set generic classes / behavior */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a.underline {
+  text-decoration: underline;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+img.border {
+  border: solid 2px var(--color-black);
+}
+
+/* define style for "real" labels, those that are "for" form items; label tags also used for radio boxes, checkboxes values */
+label[for] {
+  text-align: left;
+  padding-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+input[type="text"],
+textarea {
+  width: 80%;
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 4px;
+  background-color: var(--color-white);
+}
+
+/*********** index page styling  ***********/
+/* limit the size of the main image*/
+#mainImage {
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/*********** flex container 60 /40 split  ***********/
+/* used in contact form and projects form */
+.flexContainer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  padding: 10px;
+}
+
+.flexItemArticle {
+  flex: 100%;
+  max-width: 100%;
+  padding: 10px;
+  text-align: left;
+}
+
+.flexItemSidebar {
+  flex: 100%;
+  max-width: 100%;
+  padding: 10px;
+  text-align: left;
+}
+
+@media all and (min-width: 500px) {
+  .flexItemArticle {
+    flex: 60%;
+    max-width: 60%;
+  }
+  .flexItemSidebar {
+    flex: 40%;
+    max-width: 40%;
+  }
+}
+
+/*********** contact form styles ***********/
+#contactForm label[for] {
+  width: 120px;
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: top;
+}
+
+.errorBorder {
+  border: 2px solid var(--color-error);
+}
+
+#formErrors {
+  color: var(--color-error);
+  display: none;
+}
+
+#submit {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--color-steelblue);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--color-white);
+  border: 1px solid var(--color-medgray);
+  border-radius: 4px;
+}
+
+/*********** resume page styles ***********/
+
+.resumeHeader {
+  background-color: var(--color-steelblue);
+  color: var(--color-white);
+  padding: 10px;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.resumeHeader:hover {
+  background-color: var(--color-teal);
+}
+
+.resumeSummary {
+  color: var(--color-black);
+  background-color: var(--color-lightgray);
+  padding: 10px;
+}

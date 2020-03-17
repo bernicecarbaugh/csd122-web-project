@@ -1,0 +1,86 @@
+/* CSD 122 Final Project Bernice Carbaugh 03/17/2020 */
+* {
+  box-sizing: border-box;
+}
+
+.carouselContainer {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: var(--color-lightgray);
+}
+
+.carouselGallery {
+  max-width: 500px;
+  max-height: 400px;
+  margin: 0 auto;
+}
+
+.carouselItem {
+  max-height: 400px;
+}
+
+.carouselItem img {
+  border: solid 10px var(--color-white);
+}
+
+.carouselArrows {
+  text-align: center;
+  padding: 10px;
+}
+
+label[for] {
+  width: 200px;
+  display: block;
+}
+
+/* for medium to wider screens, label and project data are side by side */
+@media all and (min-width: 500px) {
+  label[for] {
+    width: 200px;
+    display: inline-block;
+    margin-right: 8px;
+    vertical-align: top;
+  }
+}
+
+.projectData {
+  display: inline-block;
+  padding-top: 10px;
+  vertical-align: top;
+}
+
+.flexItem2Col {
+  flex: 100%;
+  max-width: 100%;
+  text-align: center;
+  height: 300px;
+  padding: 10px;
+  position: relative;
+}
+
+/* for medium to wider screens, before and after photos are side by side*/
+@media all and (min-width: 500px) {
+  .flexItem2Col {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+#imgBefore,
+#imgAfter {
+  max-width: 600px;
+  border: solid 1px var(--color-black);
+}
+
+.imgTag {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 5px 20px;
+  z-index: 1;
+  opacity: 80%;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  font-weight: bold;
+  font-family: "Oswald", sans-serif;
+}

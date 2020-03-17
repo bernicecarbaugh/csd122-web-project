@@ -1,0 +1,65 @@
+/* CSD 122 Final Project Bernice Carbaugh 03/17/2020 */
+* {
+  box-sizing: border-box;
+}
+
+ul.favs,
+ul.output {
+  list-style-type: square;
+}
+
+.favs li {
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.favs li:hover {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.funBlock {
+  background-color: var(--color-teal);
+  color: var(--color-white);
+  display: block;
+  font-style: normal;
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 40px;
+  margin-inline-end: 40px;
+}
+
+label[for] {
+  width: 100%;
+  display: block;
+  font-weight: bolder;
+  margin-bottom: 5px;
+  color: var(--color-steelblue);
+}
+
+label.values {
+  display: block;
+  width: 100%;
+  padding-bottom: 2px;
+  margin-left: 10px;
+}
+
+select {
+  padding: 5px;
+  margin-left: 10px;
+  border-radius: 4px;
+  background-color: var(--color-white);
+}
+
+#divOutput {
+  border-color: var(--color-teal);
+  border-style: dotted;
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+hr {
+  border-top: 2px dotted var(--color-darkgray);
+}

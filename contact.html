@@ -1,3 +1,4 @@
+<!-- CSD 122 Final Project Bernice Carbaugh 03/17/2020 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,18 +8,17 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <link
       href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Oswald&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/common.css" />
     <script
       src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-    <script src="js/contact.js"></script>
+    <script src="scripts/contact.js"></script>
   </head>
 
   <body>
@@ -27,71 +27,73 @@
         Bernice Carbaugh
       </div>
 
-      <div id="divTopNav">
-        <nav>
-          <ul class="pages">
-            <li class="pages">
-              <a href="index.html">Home</a>
-            </li>
-
-            <li class="pages">
-              <a href="projects.html">Projects</a>
-            </li>
-
-            <li class="pages">
-              <a href="resume.html">Resume</a>
-            </li>
-
-            <li class="pages activepage">
-              <a href="#0">Contact</a>
-            </li>
-          </ul>
-        </nav>
+      <div id="divNav">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a class="activepage" href="contact.html">Contact</a>
       </div>
 
-      <div class="mainBody">
-        <form>
-          <p>
-            Whether you're looking for a systems solution, interested in real
-            estate, or simply looking to connect, Bernice would love to hear
-            from you.
-          </p>
+      <div id="mainContent">
+        <div class="flexContainer lightBackground">
+          <div class="flexItemArticle">
+            <form action="post" id="contactForm"
+              <p>
+                Whether you're looking for a systems solution, interested in
+                real estate, or simply looking to connect, Bernice would love to
+                hear from you.
+              </p>
 
-          <div class="thumbnail">
-            <img src="images/bernice_paris1.jpg" alt="bernice_paris" />
+              <div>
+                <label for="fullName">Name *</label>
+                <input type="text" id="fullName" name="fullName" />
+              </div>
+
+              <div>
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" />
+              </div>
+
+              <div>
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone" />
+              </div>
+
+              <div>
+                <label for="message">Message *</label>
+                <textarea rows="4" id="message" name="message"></textarea>
+              </div>
+
+              <p id="formErrors">
+                Please correct invalid entries first.
+              </p>
+
+              <div>
+                <label>&nbsp;</label>
+                <input type="submit" id="submit" value="Send Message" />
+              </div>
+
+              <p>
+                Or if you prefer, you can
+                <a
+                  class="underline"
+                  href="mailto:bernicecarbaugh@gmail.com?Subject=Web%20Form%Contact"
+                  >email</a
+                >
+                directly.
+              </p>
+            </form>
           </div>
 
-          <div>
-            <label for="fullName">Name</label>
-            <input type="text" id="fullName" name="fullName" size="100%" />
+          <div class="flexItemSidebar">
+            <img
+              class="border"
+              src="images/bernice_paris1.jpg"
+              alt="bernice_paris"
+            />
           </div>
-
-          <div>
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email" />
-          </div>
-
-          <div>
-            <label for="phone">Phone</label>
-            <input type="text" id="phone" name="phone" />
-          </div>
-
-          <div>
-            <label for="message">Message</label>
-            <textarea rows="4" id="message" name="message"></textarea>
-          </div>
-
-          <div>
-            <label>&nbsp;</label>
-            <input type="submit" id="submit" value="Send Message" />
-          </div>
-        </form>
-        <p>
-          Or if you prefer, you can
-          <a href="mailto:bernicecarbaugh@gmail.com?Subject=Web%20Form%Contact"
-            >email directly</a
-          >.
-        </p>
+        </div>
+        <!-- end flex Container-->
       </div>
     </div>
   </body>

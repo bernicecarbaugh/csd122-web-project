@@ -1,0 +1,151 @@
+<!-- CSD 122 Final Project Bernice Carbaugh 03/17/2020 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AB Flips</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="styles/abflips.css" />
+    <script
+      src="https://kit.fontawesome.com/9139e14235.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="scripts/abflips.js"></script>
+  </head>
+
+  <body>
+    <div id="divContainer">
+      <div id="divTitle">
+        Real Estate Flips
+      </div>
+
+      <div id="divNav">
+        <a href="../projects.html">Projects Home</a>
+        <a href="../pokeBowl/pokeBowl.html">Build-a-Poke-Bowl</a>
+        <a class="activepage" href="#0">Real Estate Flips</a>
+        <a href="#0">User Forms</a>
+      </div>
+
+      <div id="mainContent">
+        <!--************************ MAIN CONTENT - SUMMARY ************************ -->
+        <div>
+          <div class="sectionTitle">The AB Flips Story</div>
+          <p>
+            Here at ABFlips, we are passionate about taking rundown houses and
+            turning them into homes that people want to live in. We believe in
+            functional design, quality workmanship and a design aesthetic that
+            marries current market trends with classicism that never goes out of
+            style. We treat each project as if it was our own home and hope that
+            pride of ownership comes through in every single home we do.
+          </p>
+          <p>
+            We are two sisters who grew up spending family Sundays “open
+            housing” as we call it. We’ve always loved real estate…from
+            searching from the right house, to remodeling it to make it just so
+            and to selling it to the next buyer who will make it their perfect
+            home. We each remodeled our own homes several times over the years
+            but in 2014 we purchased our first fixer upper together. The
+            transformation of that first house was so outstanding, we’ve been
+            hooked ever since!
+          </p>
+          <p>
+            Click on a project to view more information and photos. We think
+            you'll be amazed at the before and after photos!
+          </p>
+
+          <div class="carouselContainer">
+            <div class="carouselGallery">
+              <!-- programmatically add images-->
+            </div>
+            <div class="carouselArrows">
+              <span
+                id="arrow-left"
+                class="fas fa-lg fa-chevron-circle-left"
+              ></span>
+              <span
+                id="arrow-right"
+                class="fas fa-lg fa-chevron-circle-right"
+              ></span>
+            </div>
+          </div>
+        </div>
+
+        <!--************************ MAIN CONTENT - PROJECT SPECIFIC ************************ -->
+        <!-- programmatically populated when user clicks on projects-carousel -->
+        <div id="projectSpecific">
+          <div class="sectionTitle" id="projecttitle">
+            Project Title
+          </div>
+
+          <div>
+            <label for="projectneigbhorhood">Neighborhood</label>
+            <span class="projectData" id="projectneighborhood"
+              >Neighborhood</span
+            >
+          </div>
+
+          <div>
+            <label for="projectaddress">Address</label>
+            <span class="projectData" id="projectaddress">Project Address</span>
+          </div>
+
+          <label for="projectpurchaseDate">Purchased On</label>
+          <span class="projectData" id="projectpurchaseDate"
+            >Purchase Date</span
+          >
+
+          <div>
+            <label for="projectsaleDate">Sold On</label>
+            <span class="projectData" id="projectsaleDate">Sold Date</span>
+          </div>
+
+          <div>
+            <label for="projectdescription">Description</label>
+            <span class="projectData" id="projectdescription">Description</span>
+          </div>
+
+          <div class="flexContainer">
+            <div class="flexItem2Col">
+              <span class="imgTag">Before</span>
+              <img id="imgBefore" />
+            </div>
+            <div class="flexItem2Col">
+              <span class="imgTag">After</span><img id="imgAfter" />
+            </div>
+          </div>
+        </div>
+        <!--end div project specific-->
+      </div>
+      <!--end div main content-->
+    </div>
+    <!--end div container-->
+  </body>
+</html>

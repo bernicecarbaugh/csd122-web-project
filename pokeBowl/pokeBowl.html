@@ -1,0 +1,256 @@
+<!-- CSD 122 Final Project Bernice Carbaugh 03/17/2020 -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Build-a-Poke-Bowl</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/common.css" />
+    <link rel="stylesheet" href="styles/pokeBowl.css" />
+    <script
+      src="https://kit.fontawesome.com/9139e14235.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="scripts/pokeBowl.js"></script>
+  </head>
+
+  <body>
+    <div id="divContainer">
+      <div id="divTitle">
+        Build-a-Poke-Bowl
+      </div>
+
+      <div id="divNav">
+        <a href="../projects.html">Projects Home</a>
+        <a class="activepage" href="#0">Build-a-Poke-Bowl</a>
+        <a href="../abflips/abflips.html">Real Estate Flips</a>
+        <a href="#0">User Forms</a>
+      </div>
+
+      <!--************************ MAIN CONTENT - INTRO ************************ -->
+  
+      <div class="flexContainer">
+        <div class="flexItemSidebar">
+          <img class="border" src="images/poke.jpg" alt="poke" />
+        </div>
+        <div class="flexItemArticle">
+          <span class="sectionTitle">Build-Your-Poke!</span>
+          <p>
+            Poke means “to slice or cut” in Hawaiian and refers to chunks of raw, marinated fish — usually tuna — which is then tossed over rice and topped with vegetables and umami-packed sauces.
+          </p>
+          <p>
+            From Ahi Tuna to Organic Tofu, our poke menu offers something for everyone. Customize your poke bowl from scratch or start with one of our customer favorites below.
+          </p>
+          <h3>Click to start with these fan favorites.</h3>
+          <ul class="favs">
+            <li id="favSeafoodBowl"><a href="#0">Seafood Bowl <span class="fas fa-fish"></span></a></li>
+            <li id="favVeggieBowl"><a href="#0">Veggie Bowl <span class="fas fa-seedling"></span></a></li>
+            <li id="favMeatBowl"><a href="#0">Meat Bowl <span class="fas fa-drumstick-bite"></span></a></li>
+          </ul>
+          <div class="funBlock">Because you can't always make it to Hawaii! </div>
+        </div>
+      </div> <!-- end flexContainer for poke intro-->
+
+
+      <!--************************ MAIN CONTENT - ORDER ************************ -->
+      <div class="flexContainer lightBackground">
+    
+        <div class="flexItemArticle">
+          <form id="pokeForm">
+          
+          <label for="orderName">Name for your order.</label>
+          <input id="orderName" type="text"></input>
+          <hr>
+  
+          <label for="size">Choose your bowl size.</label>
+          <label class="values">
+            <input type="radio" name="size" value="Regular" checked>
+            Regular (2 proteins included) - $10.00
+          </label>
+          <label class="values">
+            <input type="radio" name="size" value="Large">
+            Large (3 proteins included) - $12.00
+          </label>         
+          <hr>
+
+          <label for="base">Choose your base.</label>
+          <select name="base">
+            <option value="Sushi Rice">Sushi Rice</option>
+            <option value="Organic Brown Rice">Organic Brown Rice</option>
+            <option value="Organic Seasonal Greens">Organic Seasonal Greens</option>
+            <option value="Zoodles">Zucchini Noodles / Zoodles ($1 addtl)</option>
+          </select>
+          <hr>
+
+          <label for="proteins">Choose your proteins.</label>
+          <p class="subText">Up to 2 with regular size, up to 3 with large size. $1 for each additional.</p>
+          <label class="values">
+            <input type="checkbox" name="proteins" value="Wild Alaskan Salmon">
+            Wild Alaskan Salmon
+          </label>
+          <label class="values">
+            <input type="checkbox" name="proteins" value="Fresh Ahi Tuna">
+            Fresh Ahi Tuna
+          </label>
+          <label class="values">
+            <input type="checkbox" name="proteins" value="Sustainably Farm Raised Shrimp">
+            Sustainably Farm Raised Shrimp
+          </label>
+          <label class="values">
+            <input type="checkbox" name="proteins" value="Organic Tofu">
+            Organic Tofu
+          </label>
+          <label class="values">
+            <input type="checkbox" name="proteins" value="Organic Free Range Chicken">
+            Organic Free Range Chicken
+          </label> 
+          <hr>
+
+        <label for="extras">Choose your extras.</label>
+        <p class="subText">Make your bowl extra special with these additional toppings for only $1 each.</p>
+          <label class="values">
+            <input type="checkbox" name="extras" value="California Haas Avocado">
+            California Haas Avocado
+          </label>
+          <label class="values">
+            <input type="checkbox" name="extras" value="Seaweed Salad">
+            Seaweed Salad
+          </label>
+          <label class="values">
+            <input type="checkbox" name="extras" value="Hawaiian Mango">
+            Hawaiian Mango
+          </label>
+          <hr>
+
+        <label for="nocharge">Choose your mix-ins, sauces and toppings</label>
+        <p class="subText">Add any of these delicious mix-ins, sauces and toppings for no additional charge.</p>
+          <h4 class="tight">Mix-in</h4>
+          <label class="values">
+            <input type="checkbox" name="mixins" value="Organic Edamame">
+            Organic Edamame
+          </label>
+          <label class="values">
+            <input type="checkbox" name="mixins" value="Organic Cucumber">
+            Organic Cucumber
+          </label>
+          <label class="values">
+            <input type="checkbox" name="mixins" value="Fresh Ginger">
+            Fresh Ginger
+          </label>
+          <label class="values">
+            <input type="checkbox" name="mixins" value="Golden Pineapple Tidbits">
+            Golden Pineapple Tidbits
+          </label>
+          <hr>
+
+          <h4 class="tight">Sauces</h4>
+          <label class="values">
+            <input type="checkbox" name="sauces" value="House Tamari Sauce">
+            House Tamari Sauce (Umami soy)
+          </label>
+          <label class="values">
+            <input type="checkbox" name="sauces" value="Teriyaki Sauce">
+            Teriyaki Sauce
+          </label>
+          <label class="values">
+            <input type="checkbox" name="sauces" value="Sriracha Aioli">
+            Srirachi Aioli
+          </label>
+          <label class="values">
+            <input type="checkbox" name="sauces" value="Yuzu Ponzu">
+            Yuzu Ponzu
+          </label>
+          <hr>
+
+          <h4 class="tight">Toppings</h4>
+          <label class="values">
+            <input type="checkbox" name="toppings" value="Sesame Seeds">
+            Sesame Seeds
+          </label>
+          <label class="values">
+            <input type="checkbox" name="toppings" value="Green Onions">
+            Green Onions
+          </label>
+          <label class="values">
+            <input type="checkbox" name="toppings" value="Masago">
+            Masago (Fish Roe)
+          </label>
+          <label class="values">
+            <input type="checkbox" name="toppings" value="Roasted Corn">
+            Roasted Corn
+          </label>
+          <label class="values">
+            <input type="checkbox" name="toppings" value="Crunchy Onions">
+            Crunchy Onions
+          </label>
+          <hr>  
+
+          <label for="spiciness">How spicy do you want it?</label>
+          <p class="subText">1 for no spicy, 5 for get that water hose ready!</p>
+          <label class="values">None <input type="range" min="1" max="5" step="1" default="1" id="spiciness"> Spicy</label>
+          <hr>
+        </form>
+
+        </div> 
+
+        <div class="flexItemSidebar" id="divOutput">
+          <div class="sectionTitle" id="outputTitle"></div>
+
+          <p>Size: <span id="outputSize"></span></p>
+          
+          <p>Base: <span id="outputBase"></span></p>
+        
+          <p>Proteins:</p>
+          <ul class="output">
+            <span id="outputProteins"></span>
+          </ul>
+
+          <p>Extras:</p>
+          <ul class="output">
+            <span id="outputExtras"></span>
+          </ul>
+
+          <p>Mixins:</p>
+          <ul class="output">
+            <span id="outputMixins"></span>
+          </ul>
+
+          <p>Sauces:</p>
+          <ul class="output">
+            <span id="outputSauces"></span>
+          </ul>
+
+          <p>Toppings:</p>
+          <ul class="output">
+            <span id="outputToppings"></span>
+          </ul>
+      
+          <p>Spiciness:
+          <span id="outputSpiciness"></span>
+          </p>
+          <hr>
+
+          <p>Price: $<span id="outputPrice"></span></p>
+          <input type="submit" id="submit" value="Make My Poke Bowl!"></input>
+        </div>
+      </div> <!-- end flexContainer for poke order -->
+
+        
+
+      </div> <!--end div container-->
+
+  </body>
+</html>

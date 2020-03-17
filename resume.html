@@ -1,3 +1,4 @@
+<!-- CSD 122 Final Project Bernice Carbaugh 03/17/2020 -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,12 +8,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <link
       href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Oswald&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/common.css" />
     <script
       src="https://kit.fontawesome.com/9139e14235.js"
       crossorigin="anonymous"
@@ -22,7 +22,7 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
-    <script src="js/resume.js"></script>
+    <script src="scripts/resume.js"></script>
   </head>
 
   <body>
@@ -31,30 +31,15 @@
         Bernice Carbaugh
       </div>
 
-      <div id="divTopNav">
-        <nav>
-          <ul class="pages">
-            <li class="pages">
-              <a href="index.html">Home</a>
-            </li>
-
-            <li class="pages">
-              <a href="projects.html">Projects</a>
-            </li>
-
-            <li class="pages activepage">
-              <a href="#0">Resume</a>
-            </li>
-
-            <li class="pages ">
-              <a href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </nav>
+      <div id="divNav">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a class="activepage" href="#0">Resume</a>
+        <a href="contact.html">Contact</a>
       </div>
 
-      <div class="mainBody">
-        <div class="title">
+      <div id="mainContent">
+        <div class="sectionTitle">
           Work Experience
           <span class="right"
             >&nbsp;
@@ -64,9 +49,9 @@
         </div>
 
         <section class="resumeBlock">
-          <div class="resumeTitle">
+          <div class="resumeHeader">
             2004 to 2019 - Systems Analyst at
-            <a href="http://www.expediagroup.com/">Expedia Group</a> in Seattle,
+            <a class="underline" href="http://www.expediagroup.com/">Expedia Group</a> in Seattle,
             WA
           </div>
           <div class="resumeSummary">
@@ -113,7 +98,7 @@
         </section>
 
         <section class="resumeBlock">
-          <div class="resumeTitle">
+          <div class="resumeHeader">
             2001 to 2004 - President and CEO at The Presto Craft Company in
             Woodinville, WA
           </div>
@@ -143,9 +128,9 @@
         </section>
 
         <section class="resumeBlock">
-          <div class="resumeTitle">
+          <div class="resumeHeader">
             1999 to 2001 - Business Systems Analyst at
-            <a
+            <a class="underline"
               href="https://www.bizjournals.com/seattle/stories/2001/07/23/daily19.html/"
               >Safeco Credit Company</a
             >
@@ -181,9 +166,9 @@
         </section>
 
         <section class="resumeBlock">
-          <div class="resumeTitle">
+          <div class="resumeHeader">
             1995 to 1998 Senior - Financial Analyst at
-            <a href="https://en.wikipedia.org/wiki/Adaptec">Adaptec, Inc.</a> in
+            <a class="underline" href="https://en.wikipedia.org/wiki/Adaptec">Adaptec, Inc.</a> in
             Milpitas, CA
           </div>
           <div class="resumeSummary">
@@ -215,9 +200,9 @@
         </section>
 
         <section class="resumeBlock">
-          <div class="resumeTitle">
+          <div class="resumeHeader">
             1992 to 1994 - Senior Accountant at
-            <a href="https://home.kpmg/us/en/home.html"
+            <a class="underline" href="https://home.kpmg/us/en/home.html"
               >KPMG Peat Marwick, LLP</a
             >
             in Mountain View, CA
@@ -244,9 +229,11 @@
             </ul>
           </div>
         </section>
+
+        
         <div>
           <p>
-            <a href="./documents/bernice_carbaugh_resume.pdf"
+            <a class="underline" target="_blank" href="./bernice_carbaugh_resume.pdf"
               >Resume in PDF format.</a
             >
           </p>
