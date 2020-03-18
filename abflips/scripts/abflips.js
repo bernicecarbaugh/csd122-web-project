@@ -9,8 +9,9 @@ $(document).ready(function() {
     let carouselItem =
       "<div class='carouselItem'><img src='images/" +
       property.tag +
-      "_01after.webp'/></div>";
+      "_01after.jpg'/></div>";
     $carouselGallery.append(carouselItem);
+    ``;
   });
 
   // load project data - set to first property at initial load
@@ -52,8 +53,8 @@ $(document).ready(function() {
     });
 
     // set before and after img src's
-    $("#imgBefore").attr("src", "images/" + property.tag + "_01before.webp");
-    $("#imgAfter").attr("src", "images/" + property.tag + "_01after.webp");
+    $("#imgBefore").attr("src", "images/" + property.tag + "_01before.jpg");
+    $("#imgAfter").attr("src", "images/" + property.tag + "_01after.jpg");
 
     // blink the project specific section as a visual cue that it "refreshed"
     $("#projectSpecific")
